@@ -1,2 +1,2 @@
-const KUSONIME_API = "https://api-kusoraper.infrariq.ga/api";
+const KUSONIME_API = "https://kusoraper-api.riqexpe.eu.org/api";
 export default KUSONIME_API;
