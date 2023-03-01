@@ -7,7 +7,7 @@ import { RenderIfTrue } from "../../utils";
 
 const MainCard = ({ image, title, path, px, py, fontsize, centerText }) => (
   <Card bgimage={image} path={path}>
-    <CardImage src={image} alt={title ? title : "Gambar"} className="rounded" />
+    <CardImage src={"https://imgproxy1.riqexpe.eu.org/?url=" + image} alt={title ? title : "Gambar"} className="rounded" />
     <RenderIfTrue isTrue={title}>
       <CardLink py={py} px={px} fontsize={fontsize} centerText={centerText}>
         {title}

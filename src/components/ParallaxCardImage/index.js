@@ -5,7 +5,7 @@ import CardImage from "../CardImage";
 const ParallaxCardImage = ({ image, alt }) => (
   <div className="rounded">
     <CardImage
-      src={image}
+      src={"https://imgproxy1.riqexpe.eu.org/?url=" + image}
       alt={alt}
       width="100%"
       height="100%"

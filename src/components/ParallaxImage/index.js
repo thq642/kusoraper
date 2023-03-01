@@ -4,7 +4,7 @@ import { memo } from "react";
 const ParallaxImage = ({ image, alt }) => (
   <div className="flex justify-center">
     <img
-      src={image}
+      src={"https://imgproxy1.riqexpe.eu.org/?url=" + image}
       alt={alt}
       className="rounded shadow shadow-slate-800 w-[100%]"
     />

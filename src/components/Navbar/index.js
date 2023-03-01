@@ -8,8 +8,6 @@ import Input from "../Input";
 
 const routes = [
   createRoute("/", "Home"),
-  createRoute("/genre", "Genre List"),
-  createRoute("/season", "Season Anime"),
 ];
 
 const Navbar = () => {
@@ -29,18 +27,7 @@ const Navbar = () => {
     const navUl = document.querySelector("nav ul");
     const searchInput = document.querySelector("form input.search-input");
 
-    const openNavMenu = () => {
-      toggle.classList.add("hamburger-active");
-      navUl.classList.remove("hidden");
-      navUl.classList.add("flex");
-
-      setTimeout(() => {
-        navUl.classList.add("slide");
-      }, 10);
-    };
-
     const closeNavMenu = () => {
-      toggle.classList.remove("hamburger-active");
       navUl.classList.remove("slide");
 
       setTimeout(() => {
@@ -50,7 +37,7 @@ const Navbar = () => {
     };
 
     const toggleFunc = () => {
-      if (!navUl.classList.contains("slide")) openNavMenu();
+      if (!navUl.classList.contains("slide"));
       else closeNavMenu();
     };
 
@@ -135,9 +122,6 @@ const Navbar = () => {
                 id="toggle"
                 className="absolute w-[30px] h-[30px] z-[999] opacity-0 cursor-pointer"
               />
-              <span className="hamburger-line origin-top-right"></span>
-              <span className="hamburger-line"></span>
-              <span className="hamburger-line origin-bottom-right"></span>
             </div>
           </div>
         </div>
